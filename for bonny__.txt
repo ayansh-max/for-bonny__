@@ -1,0 +1,99 @@
+body {Add commentMore actions
+  margin: 0;
+  padding: 0;
+  background: #fff0f5;
+  font-family: 'Comic Sans MS', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.love-container {
+  text-align: center;
+  color: #ff1493;
+}
+
+h1 {
+  font-size: 2.5rem;
+  animation: pop 1.5s infinite alternate;
+}
+
+@keyframes pop {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+button {
+  background: #ff69b4;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 0 15px pink;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #ff1493;
+  transform: scale(1.1);
+}function nextPage() {Add commentMore actions
+  document.body.classList.add("fade-out");
+  setTimeout(() => {
+    window.location.href = "page2.html";  // Page 2 open
+  }, 1500);
+}
+.fade-out {
+  opacity: 0;
+}<!DOCTYPE html>Add commentMore actions
+<html>
+<head>
+  <title>Love Letter 💌</title>
+  <style>
+    body {
+      background: white;
+      font-family: cursive;
+      color: #ff1493;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .envelope {
+      font-size: 50px;
+      animation: float 2s infinite alternate;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0px); }
+      to { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="envelope">💌</div>
+  <h2>My love for you is sealed inside this letter ✨</h2>
+  <button onclick="alert('💖 I Love You Bonny! 💖')">Open It</button>
+</body>
+</html>!DOCTYPE html>Add commentMore actions
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bonny ❤️ Poglu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="love-container">
+    <h1>You are my Mishti Sona 😹</h1>
+    <p>Ami tomar poglu... Will you be mine forever?</p>
+    <button onclick="nextPage()">Next 💌</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
